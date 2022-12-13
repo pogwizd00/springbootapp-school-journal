@@ -26,7 +26,6 @@ public class GroupsController {
         return groupsService.getGroupByid(Long.parseLong(id));
     }
 
-    //i dont know how i can test it if it work
     @PostMapping(path = "api/course/add")
     private Groups addGroup(Groups g1){
         return groupsService.addGroup(g1);
